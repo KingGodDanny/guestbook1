@@ -63,7 +63,7 @@
 				<td><%=guestList.get(i).getNo() %></td>
 				<td><%=guestList.get(i).getName() %></td>
 				<td><%=guestList.get(i).getRegdate() %></td>
-				<td>삭제</td>
+				<td><a href="./deleteForm.jsp?no=<%=guestList.get(i).getNo() %>">삭제</a></td>
 			</tr>
 			<tr>
 				<td colspan="4" height="60">첫번째 방명록내용<br><%=guestList.get(i).getContent() %></td>
