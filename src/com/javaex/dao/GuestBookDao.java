@@ -76,6 +76,8 @@ public class GuestBookDao {
 				query += " from guestbook ";
 				query += " order by guestbook_id asc ";
 
+				System.out.println(query);
+				
 				pstmt = conn.prepareStatement(query);
 
 				rs = pstmt.executeQuery();
