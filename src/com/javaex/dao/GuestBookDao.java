@@ -57,7 +57,7 @@ public class GuestBookDao {
 		}
 	
 		
-		//등록리스트 가져오기----------------------------------------
+		//등록리스트 가져오기---------------------------------------- 늘 안되는 곳을 
 		public List<GuestBookVo> getGuestList() {
 			
 			//리스트 생성하기
@@ -76,7 +76,6 @@ public class GuestBookDao {
 				query += " from guestbook ";
 				query += " order by guestbook_id asc ";
 
-				System.out.println(query);
 				
 				pstmt = conn.prepareStatement(query);
 
@@ -173,4 +172,41 @@ public class GuestBookDao {
 			return count;
 
 		}
+		
+		
+		//Delete 메소드 좋은방법
+		public int goodDelete(int no, String password) {
+
+			int count = -1;
+
+			getConnection();
+
+			try {
+				// 3. SQL문 준비 / 바인딩 / 실행
+				String query = "";
+				query += " DELETE FROM guestbook ";
+				query += " WHERE guestbook_id = ? ";
+				query += " and password = ? ";
+
+				pstmt = conn.prepareStatement(query);
+
+				pstmt.setInt(1, no);
+				pstmt.setString(2, password);
+				
+				
+				count = pstmt.executeUpdate();
+
+				// 4.결과처리
+
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+			close();
+
+			return count;
+
+		}
+		
 }
