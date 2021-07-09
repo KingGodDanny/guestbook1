@@ -27,7 +27,7 @@
 	guestBookDao.guestInsert(guestBookVo);
 	
 	//리다이렉트 - 두번 돌아서 리스트.jsp를 보여주는것
-	response.sendRedirect("./list.jsp");
+	response.sendRedirect("./addList.jsp");
 %>
 
 

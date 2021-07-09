@@ -21,7 +21,7 @@
 </head>
 <body>
 	
-	<form action="./insert.jsp" method="get">
+	<form action="./add.jsp" method="get">
 	<table border="1">
 		<colgroup>
 			<col style="width: 40px;">

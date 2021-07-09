@@ -19,7 +19,7 @@
 	
 	
 // 	리다이렉트(요청)
- 	response.sendRedirect("./list.jsp");
+ 	response.sendRedirect("./addList.jsp");
 
 
 	//GuestBookVo gVo = new GuestBookVo();  굳이 여기에 쓸필요가 없다.  
