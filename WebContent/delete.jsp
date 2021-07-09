@@ -11,10 +11,10 @@
 	
 	//받아온 파라미터 꺼내기
 	int no = Integer.parseInt(request.getParameter("no"));
-	String ps = request.getParameter("password");
+	String password = request.getParameter("password");
 	
 	
-	guestBookDao.goodDelete(no, ps);
+	guestBookDao.goodDelete(no, password);
 
 	
 	
@@ -54,16 +54,3 @@
 	
 %>
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-	<%
-	
-	
-	%>
-</body>
-</html>
