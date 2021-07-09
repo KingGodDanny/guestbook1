@@ -20,8 +20,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>전화번호 리스트</h1>
-	<p>입력한 정보 내역입니다.</p>
 	
 	<form action="./insert.jsp" method="get">
 	<table border="1">
@@ -35,7 +33,7 @@
 			<td>이름</td>
 			<td><input type="text" name="name" value=""></td>
 			<td>비밀번호</td>
-			<td><input type="text" name="password" value=""></td>
+			<td><input type="password" name="password" value=""></td>
 		</tr>
 		
 		<tr>
